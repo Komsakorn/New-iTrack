@@ -1,0 +1,13 @@
+.head{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.art{
+    width :10rem
+}
+.title{
+    font-size: 8rem;
+    color: #2C3A49;
+    font-weight: bold;
+}
