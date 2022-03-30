@@ -5,7 +5,7 @@ import "./GoogleButton.css"
 import { refreshTokenSetup } from '../../utils/refreshToken';
 
 const clientId =
-  '707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com';
+'597160784904-fuii4m74980cgg222ga4lv3p551ab78f.apps.googleusercontent.com';
 
 function GoogleButton() {
   const onSuccess = (res) => {

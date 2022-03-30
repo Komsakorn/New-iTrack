@@ -6,22 +6,22 @@ const Navbar = () => {
  return (
           <div className='Nav'>
               <div className='NavMenu'>
-              <div className='NavLink'>
+              <div className='NavLink nav-button'>
                 ABOUT US
                 </div>
-              <div className='NavLink'>
+              <button className='NavLink nav-button'>
                 ADD ACTIVITIES
-                </div>
-              <div className='NavLink'>
+                </button>
+              <div className='NavLink nav-button'>
                 ACTIVITY LIST
                 </div>
-              <div className='NavLink'>
+              <div className='NavLink nav-button'>
                 BLOG
                 </div>
-              <div className='NavLink'>
+              <div className='NavLink nav-button'>
                 CONTACT US
                 </div>
-              <div className='NavLink'>
+              <div className='NavLink nav-button'>
                 <img className='profile-icon' src="/image/966-9665493_my-profile-icon-blank-profile-image-circle.png" />
                 </div>
               </div>

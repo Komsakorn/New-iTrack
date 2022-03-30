@@ -27,3 +27,7 @@
     width: 4em;
     height: auto;
   }
+  .nav-button{
+background-color: #000;
+border-style: none;
+  }

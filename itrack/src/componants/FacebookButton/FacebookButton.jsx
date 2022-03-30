@@ -2,12 +2,10 @@ import React from 'react';
 
 import './FacebookButton.css';
 
-const FacebookButton = ({ children, title }) => {
-  const loginWithFacebook = () => {
-    window.open('https://www.facebook.com');
-  }
+const FacebookButton = () => {
+  
+  return <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false"></div>;
 
-  return <img className='facebook-btn' src='/facebook.svg' alt='facebook' onClick={loginWithFacebook}/>;
 }
 
 export default FacebookButton;
