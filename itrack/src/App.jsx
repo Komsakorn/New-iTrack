@@ -1,16 +1,24 @@
 import React from 'react';
 import './App.css';
-import Header from './componants/Header/Header';
-import Navbar from './componants/Navbar/Navbar';
 import Login from './componants/page/Login';
+import AddActivity from './componants/page/Add-activity';
+import ActivityList from './componants/page/Activity-list';
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
 
 const App = () => {
   return (<>
-   <Header imgSrc='image/itracklogo.png' title="iTRACK"/>
-   <Navbar />
-   <Login />
+  <ActivityList />
    </>
   );
 }
 
+
+  //<BrowserRouter>
+  //<Routes>
+  //<Route path="/" element={<Login />} />
+  //<Route path="add-activity" element={<AddActivity />} />
+  //<Route path="activity-list" element={<ActivityList />} />
+  //</Routes>
+  //</BrowserRouter>
 export default App;

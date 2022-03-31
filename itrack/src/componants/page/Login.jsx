@@ -5,7 +5,8 @@ import Input from '../input/Input';
 import NoAccount from '../NoAccount/NoAccount';
 import GoogleButton from '../GoogleButton/GoogleButton';
 import FacebookButton from '../FacebookButton/FacebookButton';
-
+import Header from '..//Header/Header';
+import Navbar from '..//Navbar/Navbar';
 
 const Login = () => {
   const [isInvalid, setIsInvalid] = useState(false);
@@ -29,7 +30,9 @@ const Login = () => {
   },[email]);
   
   return (
-  <main> 
+    <main> 
+    <Header imgSrc='image/itracklogo.png' title="iTRACK"/>
+    <Navbar />
     <div className="center">
       <div className='box'>
          <img className='banner' src={'/image/run3-1.png'} />

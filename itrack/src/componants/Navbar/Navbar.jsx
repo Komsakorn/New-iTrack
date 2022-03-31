@@ -6,24 +6,24 @@ const Navbar = () => {
  return (
           <div className='Nav'>
               <div className='NavMenu'>
-              <div className='NavLink nav-button'>
+              <a className='NavLink' href='#'>
                 ABOUT US
-                </div>
-              <button className='NavLink nav-button'>
+                </a>
+              <a className='NavLink' href='#'>
                 ADD ACTIVITIES
-                </button>
-              <div className='NavLink nav-button'>
+                </a>
+              <a className='NavLink' href='#'>
                 ACTIVITY LIST
-                </div>
-              <div className='NavLink nav-button'>
+                </a>
+              <a className='NavLink' href='#'>
                 BLOG
-                </div>
-              <div className='NavLink nav-button'>
+                </a>
+              <a className='NavLink' href='#'>
                 CONTACT US
-                </div>
-              <div className='NavLink nav-button'>
-                <img className='profile-icon' src="/image/966-9665493_my-profile-icon-blank-profile-image-circle.png" />
-                </div>
+                </a>
+              <a className='NavLink' href='#'>
+                <img className='profile-icon' alt='profile-icon' src="/image/966-9665493_my-profile-icon-blank-profile-image-circle.png" />
+                </a>
               </div>
           </div>
         
