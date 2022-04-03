@@ -12,7 +12,7 @@ const ActivityList = () => {
   <Table />
   </section>
   <div className="add-button">
-      <a href="https://komsakorn.github.io/9packs/display" target="_blank" className="close"><img className='close-icon' src={'/image/index-pic/icons8-plus-48.png'} /></a>
+      <a href="http://localhost:3000/add-activity" className="close"><img className='close-icon' src={'/image/index-pic/icons8-plus-48.png'} /></a>
       </div>
     </>
   );

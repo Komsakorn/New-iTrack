@@ -7,7 +7,7 @@ const AddActivity = () => {
   return (<>
   <Header imgSrc='image/itracklogo.png' title="iTRACK"/>
   <Navbar />
-  <section classNameName="boxed">
+  <section className="boxed">
   <h1 className="add-activity-title">ADD ACTIVITY</h1>
   <div className="form">
     <div className="content-box">

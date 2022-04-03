@@ -6,13 +6,13 @@ const Navbar = () => {
  return (
           <div className='Nav'>
               <div className='NavMenu'>
-              <a className='NavLink' href='#'>
-                ABOUT US
+              <a className='NavLink' href='http://localhost:3000/'>
+                HOME
                 </a>
-              <a className='NavLink' href='#'>
+              <a className='NavLink' href="http://localhost:3000/add-activity">
                 ADD ACTIVITIES
                 </a>
-              <a className='NavLink' href='#'>
+              <a className='NavLink' href="http://localhost:3000/activity-list">
                 ACTIVITY LIST
                 </a>
               <a className='NavLink' href='#'>

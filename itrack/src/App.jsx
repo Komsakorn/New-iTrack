@@ -7,18 +7,17 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
 const App = () => {
-  return (<>
-  <AddActivity />
-   </>
+  return (
+  <BrowserRouter>
+  <Routes>
+  <Route path="/" element={<Login />} />
+  <Route path="add-activity" element={<AddActivity />} />
+  <Route path="activity-list" element={<ActivityList />} />
+  </Routes>
+  </BrowserRouter>
+
   );
 }
 
 
-  //<BrowserRouter>
-  //<Routes>
-  //<Route path="/" element={<Login />} />
-  //<Route path="add-activity" element={<AddActivity />} />
-  //<Route path="activity-list" element={<ActivityList />} />
-  //</Routes>
-  //</BrowserRouter>
 export default App;
