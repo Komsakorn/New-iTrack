@@ -5,7 +5,6 @@ import AddActivity from './componants/page/Add-activity';
 import ActivityList from './componants/page/Activity-list';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
-
 const App = () => {
   return (
   <BrowserRouter>

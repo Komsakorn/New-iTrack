@@ -1,6 +1,7 @@
 import React from 'react';
-
 import './Navbar.css';
+import LogoutHooks from '../GoogleButton/GoogleLogout';
+
 
 const Navbar = () => {
  return (
@@ -22,7 +23,7 @@ const Navbar = () => {
                 CONTACT US
                 </a>
               <a className='NavLink' href='#'>
-                <img className='profile-icon' alt='profile-icon' src="/image/966-9665493_my-profile-icon-blank-profile-image-circle.png" />
+              <span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text"><LogoutHooks /></span></a></span>
                 </a>
               </div>
           </div>

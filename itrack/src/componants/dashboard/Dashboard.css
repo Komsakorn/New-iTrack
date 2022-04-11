@@ -27,7 +27,7 @@
     justify-content: center;
 }
 .dashboard-icon{
-    width: 3em;
+    width: 1.5em;
     height:auto;
 }
 .dashboard-tag{
@@ -41,6 +41,10 @@
     background-color: #B7ECEA;
     border-radius: 40%;
     margin-left: 0.5em;
+}
+.manage-icon{
+  display: flex;
+  justify-content: space-evenly;
 }
   #activities td, #activities th {
       border-bottom:2px solid #37485B;
