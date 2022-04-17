@@ -4,8 +4,8 @@ import './Input.css';
 
 const Input = ({isInvalid = false, ...props}) => {
   return <>  
-          <input class={isInvalid ? 'error' : ''} {...props} />
-          {isInvalid && <div class='error-text'>Email is invalid</div>}
+          <input className={isInvalid ? 'error' : ''} {...props} />
+          {isInvalid && <div className='error-text'>Email is invalid</div>}
          </>;
 }
 
