@@ -7,11 +7,16 @@
 .center {
   display: flex;
   justify-content: center;
+  height: 100vh;
+  background-image: url("../../../public/image/website-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .box {
   display: flex;
+  height: max-content;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 100px;
   padding: 4em 6em;

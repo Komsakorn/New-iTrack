@@ -7,16 +7,18 @@ const ActivityList = () => {
   return (
     <>
       <Navbar />
-      <section className="boxed-page">
-        <Table />
-      </section>
-      <div className="add-button">
-        <a href="http://localhost:3000/add-activity" className="close">
-          <img
-            className="close-icon"
-            src={"/image/index-pic/icons8-plus-48.png"}
-          />
-        </a>
+      <div className="background">
+        <section className="boxed-page">
+          <Table />
+        </section>
+        <div className="add-button">
+          <a href="http://localhost:3000/add-activity" className="close">
+            <img
+              className="close-icon"
+              src={"/image/index-pic/icons8-plus-48.png"}
+            />
+          </a>
+        </div>
       </div>
     </>
   );

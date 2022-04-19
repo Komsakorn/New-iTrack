@@ -135,7 +135,7 @@ class Table extends React.Component {
   render() {
     return (
       <div className="table">
-        <h1 id="title">Activities</h1>
+        <h1 id="title">ACTIVITIES</h1>
         <table id="activities">
           <tbody>
             <tr>{this.renderTableHeader()}</tr>

@@ -6,16 +6,21 @@ body {
 }
 .add-activity-title {
   text-align: center;
-  font-size: xx-large;
+  font-style: normal;
+  font-size: 2em;
   font-family: "Bebas Neue", cursive;
-  color: rgb(0, 0, 0);
-  margin-top: 50px;
+  color: #37485b;
+  margin-left: 3em;
 }
 .boxed {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-image: url("../../../public/image/website-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .form {
   display: flex;
@@ -38,6 +43,7 @@ label {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 7%;
   width: 50em;
+  background-color: rgb(255, 255, 255);
 }
 .label-select {
   display: flex;
@@ -46,6 +52,7 @@ label {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 7%;
   width: 50em;
+  background-color: rgb(255, 255, 255);
 }
 #select-type-label {
   width: 60%;
@@ -96,16 +103,16 @@ select {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color: rgba(94 100 255);
+  background-color: #538bc0;
 }
 
 .next-button:hover {
-  background-color: rgba(94 100 255);
+  background-color: #538bc0;
 }
 
 .next-button:active {
-  background: linear-gradient(to bottom, rgba(94 100 255) 5%, #ededed 100%);
-  background-color: rgba(94 100 255);
+  background: linear-gradient(to bottom, #538bc0 5%, #ededed 100%);
+  background-color: #538bc0;
   position: relative;
   top: 1px;
 }
@@ -113,7 +120,7 @@ select {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .warning {

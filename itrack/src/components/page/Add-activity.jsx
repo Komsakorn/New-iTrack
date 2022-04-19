@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Add-activity.css";
 import Axios from "axios";
 import Navbar from "../Navbar/Navbar";
@@ -241,12 +241,12 @@ const AddActivity = () => {
             </div>
           </div>
         </div>
+        <div className="end-button">
+          <button className="next-button" onClick={handleSubmit}>
+            Save
+          </button>
+        </div>
       </section>
-      <div className="end-button">
-        <button className="next-button" onClick={handleSubmit}>
-          Save
-        </button>
-      </div>
     </form>
   );
 };

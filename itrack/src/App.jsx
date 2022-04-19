@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Home from "./components/page/Home";
 import Login from "./components/page/Login";
 import AddActivity from "./components/page/Add-activity";
 import ActivityList from "./components/page/Activity-list";
@@ -13,6 +14,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="home" element={<Home />} />
           <Route path="add-activity" element={<AddActivity />} />
           <Route path="activity-list" element={<ActivityList />} />
         </Routes>

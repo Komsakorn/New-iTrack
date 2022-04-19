@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="Nav">
       <div className="NavMenu">
-        <a className="NavLink" href="#">
+        <a className="NavLink" href="http://localhost:3000/Home">
           HOME
         </a>
         <a className="NavLink" href="http://localhost:3000/add-activity">

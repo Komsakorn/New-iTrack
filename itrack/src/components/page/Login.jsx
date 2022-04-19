@@ -2,15 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./login.css";
 import Button from "../button/Button";
 import Input from "../input/Input";
-import NoAccount from "../NoAccount/NoAccount";
+import SignUp from "../SignUp/SignUp";
 import GoogleButton from "../GoogleButton/GoogleButton";
 import FacebookButton from "../FacebookButton/FacebookButton";
-import Axios from "axios";
 
 const Login = () => {
   const [isInvalid, setIsInvalid] = useState(false);
   const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
 
   const validateEmail = (email) => {
     return String(email)
@@ -20,16 +18,8 @@ const Login = () => {
       );
   };
 
-  const login = () => {
-    Axios({
-      method: "POST",
-      data: {
-        email: loginEmail,
-        password: loginPassword,
-      },
-      withCredentials: true,
-      url: "http://localhost:4000/login",
-    }).then((res) => console.log(res));
+  const handleLogin = () => {
+    window.location.href = "http://localhost:3000/Home";
   };
 
   useEffect(() => {
@@ -62,15 +52,11 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Enter your password"
-              value={loginPassword}
-              onChange={(e) => setLoginPassword(e.target.value)}
             />
-            <a id="login-button" href="http://localhost:3000/add-activity">
-              <Button onClick={login}>Login</Button>
-            </a>
+            <Button onClick={handleLogin}>Login</Button>
             <GoogleButton />
             <FacebookButton />
-            <NoAccount onSignUpClick={() => alert("sign up")} />
+            <SignUp />
           </div>
         </div>
       </div>

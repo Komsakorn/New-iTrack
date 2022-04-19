@@ -2,13 +2,14 @@
   text-align: start;
   font-style: normal;
   font-size: 2em;
+  font-family: "Bebas Neue", cursive;
   color: #37485b;
   margin-left: 3em;
 }
 
 #activities {
   text-align: center;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", cursive;
   border-collapse: collapse;
   border: 3px solid #ddd;
   width: 100%;
