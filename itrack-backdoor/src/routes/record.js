@@ -24,7 +24,7 @@ router.get("/:recordId", (req, res, next) => {
 });
 
 router.get("/", async (req, res, next) => {
-  const records = await RecordModel.find({});
+  const records = await RecordModel.find({}).sort({ timestamp: -1 });
   res.send(records);
 });
 

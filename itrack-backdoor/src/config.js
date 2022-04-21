@@ -10,13 +10,15 @@
  * I suggest using mongoUri as below and pass other things as options
  **/
 
- module.exports = {
-    mongoUri: 'mongodb+srv://itrack.7nr0e.mongodb.net',
-    mongoOptions: {
-      user: 'itrackadmin',
-      pass: 'adminitrack21',
-      dbName: 'itrack-records',
-      retryWrites: true,
-      w: 'majority',
-    },
-  };
+module.exports = {
+  mongoUri: "mongodb+srv://itrack.7nr0e.mongodb.net",
+  mongoOptions: {
+    user: "itrackadmin",
+    pass: "adminitrack21",
+    dbName: "itrack-records",
+    retryWrites: true,
+    w: "majority",
+  },
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
