@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const config = require("./config");
 const userRouter = require("./routes/user");
 const cors = require("cors");
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 if (config.isVercel) {
