@@ -1,22 +1,22 @@
-const axios = require('axios').default;
+const axios = require("axios").default;
 
 const run = async () => {
   const client = axios.create({
-    baseURL: 'http://localhost:4000',
+    baseURL: "https://itrack-backdoor.vercel.app/",
   });
 
-  const res = await client.get('/users/me/records');
+  const res = await client.get("/users/me/records");
 
   console.log(res.status);
   console.log(res.statusText);
   console.log(res.data);
 
-  const postResponse = await client.post('/users/me/records', {
-    activityName: 'Walking',
-    timestamp: '2020-03-09T00:00:00.000Z',
+  const postResponse = await client.post("/users/me/records", {
+    activityName: "Walking",
+    timestamp: "2020-03-09T00:00:00.000Z",
     duration: 1000,
     calories: 200,
-    description: '',
+    description: "",
   });
 
   console.log(`Post response status ${postResponse.status}`);
@@ -24,14 +24,16 @@ const run = async () => {
 
   // GET /users/me/records?activityName=Walking
 
-  const getRes = await client.get('/users/me/records', { params: { activityName: 'Walking' } });
+  const getRes = await client.get("/users/me/records", {
+    params: { activityName: "Walking" },
+  });
 
   console.log(getRes.status);
 };
 
 run()
   .then(() => {
-    console.log('Done');
+    console.log("Done");
     process.exit(0);
   })
   .catch((err) => {

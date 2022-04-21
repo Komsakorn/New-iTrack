@@ -4,7 +4,7 @@ import Axios from "axios";
 import Navbar from "../Navbar/Navbar";
 
 const client = Axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "https://itrack-backdoor.vercel.app/",
   validateStatus: () => true,
 });
 
@@ -34,7 +34,12 @@ const AddActivity = () => {
       tags: activityTags,
     };
     const postPromise = new Promise((resolve, reject) => {
-      resolve(Axios.post(`http://localhost:4000/users/me/records/`, records));
+      resolve(
+        Axios.post(
+          `https://itrack-backdoor.vercel.app/users/me/records/`,
+          records
+        )
+      );
     });
     postPromise.then(() => {
       window.location.href = "https://itrack.vercel.app/activity-list";
