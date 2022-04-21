@@ -10,15 +10,17 @@
  * I suggest using mongoUri as below and pass other things as options
  **/
 
+require("dotenv").config();
+
 module.exports = {
-  mongoUri: "mongodb+srv://itrack.7nr0e.mongodb.net",
+  isVercel: process.env.IS_VERCEL || false,
+  port: process.env.PORT || 4000,
+  mongoUri: process.env.MONGO_URI,
   mongoOptions: {
-    user: "itrackadmin",
-    pass: "adminitrack21",
-    dbName: "itrack-records",
+    user: process.env.MONGO_USER,
+    pass: process.env.MONGO_PASSWORD,
+    dbName: process.env.MONGO_DATABASE,
     retryWrites: true,
     w: "majority",
   },
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 };
