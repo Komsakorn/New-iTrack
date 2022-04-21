@@ -133,7 +133,7 @@ const AddActivity = () => {
             <div className="container-fluid label-input">
               <label>Description </label>
               <input
-                id="description"
+                id="add-description"
                 className="add-activity-input"
                 name="description"
                 type="text"
@@ -228,12 +228,13 @@ const AddActivity = () => {
             <div className="container-fluid label-input">
               <label for="img">
                 Upload Image:
-                <div>Size must not above 50KB.</div>
+                <br />
+                Size must not above 50KB.
               </label>
               <input
                 type="file"
                 className="add-image-input"
-                id="img"
+                id="upload-img"
                 name="img"
                 accept=".jpeg, .png, .jpg"
                 onChange={(e) => onChangeActivityImage(e)}
@@ -242,7 +243,7 @@ const AddActivity = () => {
           </div>
         </div>
         <div className="end-button">
-          <button className="next-button" onClick={handleSubmit}>
+          <button className="next-button custom-btn" onClick={handleSubmit}>
             Save
           </button>
         </div>

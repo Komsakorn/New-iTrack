@@ -65,12 +65,70 @@ img {
   padding-bottom: 12px;
   text-align: center;
   background-color: #f3f3f3;
-  color: 37485B;
+  color: #37485b;
 }
 .activity_id {
   display: none;
 }
 #resized {
   width: 5em;
-  height: auto;
+  height: 5em;
+}
+
+@media (max-width: 1000px) {
+  #cal {
+    display: none;
+  }
+  #table-cal {
+    display: none;
+  }
+  #tags {
+    display: none;
+  }
+  #table-tags {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  #type {
+    display: none;
+  }
+  #table-type {
+    display: none;
+  }
+  #img {
+    display: none;
+  }
+  #table-img {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  #duration {
+    display: none;
+  }
+  #table-duration {
+    display: none;
+  }
+}
+@media (max-width: 410px) {
+  #description {
+    display: none;
+  }
+  #table-desc {
+    display: none;
+  }
+  #activities th {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #activities td,
+  #activities th {
+    padding: 0px;
+    font-size: 0.5em;
+  }
+  #title {
+    font-size: 0.75em;
+  }
 }

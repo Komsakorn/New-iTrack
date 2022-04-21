@@ -30,3 +30,29 @@
   width: 4em;
   height: auto;
 }
+
+@media (max-width: 900px) {
+  #Navlink-event {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #Navlink-event {
+    display: none;
+  }
+  #Navlink-blog {
+    display: none;
+  }
+  .Nav {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 300px) {
+  .Nav {
+    font-size: 0.5em;
+  }
+  .NavLink {
+    padding: 0em 0.25em;
+  }
+}

@@ -10,9 +10,11 @@ const SignUp = () => {
   const handleOnClick = () => setSignUp(!signUp);
   return (
     <div className="sign-up">
-      <div>
-        <text>Don’t have an account?</text>{" "}
-        <Button onClick={handleOnClick}>Sign up</Button>
+      <div className="registration">
+        <text className="no-regis">Don’t have an account?</text>
+        <Button className="noacc-button custom-btn" onClick={handleOnClick}>
+          Sign up
+        </Button>
       </div>
       {signUp ? <NoAccount /> : null}
     </div>

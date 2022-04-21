@@ -5,26 +5,6 @@
   border: 3px solid rgb(88, 88, 88);
   border-radius: 2%;
 }
-/*@media (max-width: 600px) {
-  .low-content-box-2 {
-    display: none;
-  }
-}
-@media (max-width: 900px) {
-  .low-content-box-3 {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .low-content-box-5 {
-    display: none;
-  }
-}
-@media (max-width: 900px) {
-  .low-content-box-6 {
-    display: none;
-  }
-}*/
 .add-button {
   display: flex;
   justify-content: flex-end;

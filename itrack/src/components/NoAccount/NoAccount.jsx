@@ -31,7 +31,7 @@ const NoAccount = ({ isLoggedIn = false }) => {
 
   return (
     <div className="no-account">
-      <div>
+      <div className="regis-section">
         <h1 className="register">Register</h1>
         <div className="regis-input">
           <Input
@@ -46,9 +46,9 @@ const NoAccount = ({ isLoggedIn = false }) => {
             placeholder="Enter your password"
             type="password"
           />
-          <div className="regis-button">
-            <Button onClick={register}>Register and Login</Button>
-          </div>
+          <Button className="regis-button custom-btn" onClick={register}>
+            Register and Login
+          </Button>
         </div>
       </div>
     </div>

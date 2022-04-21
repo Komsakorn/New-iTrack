@@ -46,7 +46,12 @@ class Table extends React.Component {
   renderTableHeader() {
     let header = Object.keys(this.state.activities[0]);
     return header.map((key, index) => {
-      if (key !== "_id") return <th key={index}>{key.toUpperCase()}</th>;
+      if (key !== "_id")
+        return (
+          <th id={key} key={index}>
+            {key.toUpperCase()}
+          </th>
+        );
     });
   }
 
@@ -68,15 +73,15 @@ class Table extends React.Component {
         activity;
       return (
         <tr key={index}>
-          <td>{img}</td>
-          <td>{topic}</td>
-          <td>{description}</td>
-          <td>{type}</td>
-          <td>{duration}</td>
-          <td>{date}</td>
-          <td>{cal}</td>
-          <td>{tags}</td>
-          <td>{manage}</td>
+          <td id="table-img">{img}</td>
+          <td id="table-topic">{topic}</td>
+          <td id="table-desc">{description}</td>
+          <td id="table-type">{type}</td>
+          <td id="table-duration">{duration}</td>
+          <td id="table-date">{date}</td>
+          <td id="table-cal">{cal}</td>
+          <td id="table-tags">{tags}</td>
+          <td id="table-manage">{manage}</td>
         </tr>
       );
     });
@@ -137,7 +142,7 @@ class Table extends React.Component {
       <div className="table">
         <h1 id="title">ACTIVITIES</h1>
         <table id="activities">
-          <tbody>
+          <tbody id="acc-table">
             <tr>{this.renderTableHeader()}</tr>
             {this.renderTableData()}
           </tbody>

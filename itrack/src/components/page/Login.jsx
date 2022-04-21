@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./login.css";
 import Button from "../button/Button";
 import Input from "../input/Input";
 import SignUp from "../SignUp/SignUp";
 import GoogleButton from "../GoogleButton/GoogleButton";
 import FacebookButton from "../FacebookButton/FacebookButton";
+import "./login.css";
 
 const Login = () => {
   const [isInvalid, setIsInvalid] = useState(false);
@@ -32,12 +32,12 @@ const Login = () => {
 
   return (
     <main>
-      <div className="center">
+      <div className="center-home">
         <div className="box">
           <img className="banner" src={"/image/run3-1.png"} />
           <div className="container">
-            <h1>Welcome to iTRACK</h1>
-            <h2>Let’s log in to be the better you.</h2>
+            <text id="welcome-itrack">Welcome to iTRACK</text>
+            <text id="let-login">Let’s log in to be the better you.</text>
             <Input
               id="email"
               type="text"
@@ -53,7 +53,9 @@ const Login = () => {
               name="password"
               placeholder="Enter your password"
             />
-            <Button onClick={handleLogin}>Login</Button>
+            <Button className="login-button custom-btn" onClick={handleLogin}>
+              Login
+            </Button>
             <GoogleButton />
             <FacebookButton />
             <SignUp />
