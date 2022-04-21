@@ -4,7 +4,7 @@ import Axios from "axios";
 import Navbar from "../Navbar/Navbar";
 
 const client = Axios.create({
-  baseURL: "https://itrack-backdoor.vercel.app/",
+  baseURL: "https://itrack-backend.vercel.app/",
   validateStatus: () => true,
 });
 
@@ -36,7 +36,7 @@ const AddActivity = () => {
     const postPromise = new Promise((resolve, reject) => {
       resolve(
         Axios.post(
-          `https://itrack-backdoor.vercel.app/users/me/records/`,
+          `https://itrack-backend.vercel.app/users/me/records/`,
           records
         )
       );
