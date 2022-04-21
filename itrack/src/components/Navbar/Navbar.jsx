@@ -9,21 +9,21 @@ const Navbar = () => {
         <a
           className="NavLink"
           id="Navlink-home"
-          href="http://localhost:3000/Home"
+          href="https://itrack.vercel.app/Home"
         >
           HOME
         </a>
         <a
           className="NavLink"
           id="Navlink-add"
-          href="http://localhost:3000/add-activity"
+          href="https://itrack.vercel.app/add-activity"
         >
           ADD ACTIVITY
         </a>
         <a
           className="NavLink"
           id="Navlink-list"
-          href="http://localhost:3000/activity-list"
+          href="https://itrack.vercel.app/activity-list"
         >
           ACTIVITIES LIST
         </a>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <a
           className="NavLink"
           id="Navlink-signout"
-          href="http://localhost:3000/"
+          href="https://itrack.vercel.app/"
         >
           <LogoutHooks />
         </a>

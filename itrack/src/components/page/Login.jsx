@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    window.location.href = "http://localhost:3000/Home";
+    window.location.href = "https://itrack.vercel.app/Home";
   };
 
   useEffect(() => {

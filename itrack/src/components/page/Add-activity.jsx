@@ -37,7 +37,7 @@ const AddActivity = () => {
       resolve(Axios.post(`http://localhost:4000/users/me/records/`, records));
     });
     postPromise.then(() => {
-      window.location.href = "http://localhost:3000/activity-list";
+      window.location.href = "https://itrack.vercel.app/activity-list";
     });
   }
 

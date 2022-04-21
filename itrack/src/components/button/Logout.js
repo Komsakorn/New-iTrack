@@ -7,7 +7,7 @@ const clientId =
 function LogoutHooks() {
   const onLogoutSuccess = (res) => {
     {
-      window.location.href = "http://localhost:3000/";
+      window.location.href = "https://itrack.vercel.app/";
     }
     alert("Logged out Successfully ✌");
   };
